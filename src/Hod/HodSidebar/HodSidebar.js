@@ -13,7 +13,7 @@ import AttendanceHod from "../../Hod/Attendance/AttendanceHod";
 import Home from "../../Hod/HomeSidebar/Home";
 import HodTable from "../HodForm/HodTable";
 import HodDashboard from "../HodForm/HodDashboard";
-import HodResultTable from "../Results/HodResultTable";
+// import HodResultTable from "../Results/HodResultTable";
 
 const HodSidebar = () => {
 
@@ -97,7 +97,7 @@ Department</h2>
         </TabContent>
         <TabContent id="tab3" activeTab={activeTab}>
               {/* <ResultTable/> */}
-              <HodResultTable/>
+              {/* <HodResultTable/> */}
         </TabContent>
         <TabContent id="tab4" activeTab={activeTab}>
           <SecondFeesTable/>

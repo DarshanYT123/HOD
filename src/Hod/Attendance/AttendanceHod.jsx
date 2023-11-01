@@ -14,7 +14,7 @@ const AttendanceHod = () => {
         cc:"CC:",
         cc2:"abc",
         email:"abc21@ldrp.ac.in",
-        path:"#"
+        path:"/attendancetable"
 
       },
       {
@@ -29,7 +29,7 @@ const AttendanceHod = () => {
         cc:"CC:",
         cc2:"abc",
         email:"abc21@ldrp.ac.in",
-        path:"#"
+        path:"/attendancetable"
       },
       {
         imagetitle: "B",
@@ -43,7 +43,7 @@ const AttendanceHod = () => {
         cc:"CC:",
         cc2:"abc",
         email:"abc21@ldrp.ac.in",
-        path:"#"
+        path:"/attendancetable"
       },
       {
         imagetitle: "B",
@@ -57,7 +57,7 @@ const AttendanceHod = () => {
         cc:"CC:",
         cc2:"abc",
         email:"abc21@ldrp.ac.in",
-        path:"#"
+        path:"/attendancetable"
       },
            
       
@@ -67,7 +67,7 @@ const AttendanceHod = () => {
 
   return (
     <>
-      <div className="absolute top-[5.5rem] right-0  px-24 rounded-[6px]  py-5 overflow-y-auto h-[44rem]  bg-[#F9FAFA]  ">
+      <div className="absolute top-[6.5rem] right-0  px-24 rounded-[6px]  py-5 overflow-y-auto h-[44rem]  bg-[#F9FAFA]  ">
         <div className="py-5">
           <h1 className="font-Raleway text-[#47A5E4] text-[20px] font-bold leading-[23.48px] tracking-[5.5%]">
           Classes Of Computer Engineering {" "}
@@ -93,7 +93,7 @@ const AttendanceHod = () => {
                   { value.imagetitle}
                     </span>
                   </div>
-                  <div className="flex gap-6  px-4 absolute bottom-8 left-0">
+                  <div className="flex gap-9  px-4 absolute bottom-8 left-0">
                     <span className="font-inter font-bold text-[10px] text-[#FFFF] leading-[12.1px] tracking-[2%]">
                     {value.attendance}
                     </span>

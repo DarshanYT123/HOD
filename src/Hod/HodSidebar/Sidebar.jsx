@@ -1,10 +1,16 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Sidebar = () => {
 
-  const [activeTab, setActiveTab] = useState("");
+  const [activeTab, setActiveTab] = useState("Home");
+  const handleClick = () => {
+    setActiveTab("");
+};
+
+  
   return (
-    <div className="">
+    <div className="relative -top-5 ">
      <div className="px-2">
      <div className=" rounded-lg  bg-white  w-[240px] h-[729px]  left-0   ">
      <div className="flex items-center justify-center   ">
@@ -23,19 +29,19 @@ Department</h2>
        </div>
        </a>
              </div>
-             <div className="sidebar flex flex-col justify-center items-center my-4 space-y-5">
-                <a href="/home">
-                <p className={`${activeTab === "Home" ? "px-10 py-2 bg-[#47A5E4] text-white border-transparent" : ""}`} onClick={() => setActiveTab("Home")} >Home</p>
-                </a>
-                <a href="/attendance">
-                <p className={`${activeTab === "Attendance" ? "active" : ""}`} onClick={() => setActiveTab("Attendance")} >Attendance</p>
-                </a>
-                <a href="/result">
-                <p className={`${activeTab === "Results" ? "active" : ""}`} onClick={() => setActiveTab("Results")} >Results</p>
-                </a>
-                <a href="/fees" >
-                <p className={`${activeTab === "Fees Details" ? "active" : ""}`} onClick={() => setActiveTab("Fees Details")} >Fees Details</p>
-                </a>
+             <div className=" flex flex-col justify-center items-center my-4 space-y-5">
+             <Link to="/home">
+                <p className={`${activeTab === "Home" ? " bg-[#47A5E4] text-white border-transparent cursor-pointer rounded-[6px] text-[16px] font-Poppins  px-20 py-2 not-italic font-bold leading-[normal] tracking-[0.32px] capitalize " : "border-transparent  text-black text-[16px] font-Poppins not-italic font-normal leading-[normal] tracking-[0.32px] capitalize"}`} onClick={() => setActiveTab("Home")} >Home</p>
+                </Link>
+                <Link to="/attendance">
+                <p className={`${activeTab === "Attendance" ? " bg-[#47A5E4] text-white border-transparent cursor-pointer rounded-[6px] text-[16px] font-Poppins  px-14 py-2 not-italic font-bold leading-[normal] tracking-[0.32px] capitalize " : "border-transparent  text-black text-[16px] font-Poppins not-italic font-normal leading-[normal] tracking-[0.32px] capitalize"}`} onClick={() => setActiveTab("Attendance")} >Attendance</p>
+                </Link>
+                <Link to="/results">
+                <p className={`${activeTab === "Results" ? " bg-[#47A5E4] text-white border-transparent cursor-pointer rounded-[6px] text-[16px] font-Poppins  px-20 py-2 not-italic font-bold leading-[normal] tracking-[0.32px] capitalize " : "border-transparent  text-black text-[16px] font-Poppins not-italic font-normal leading-[normal] tracking-[0.32px] capitalize"}`} onClick={() => setActiveTab("Results")} >Results</p>
+                </Link>
+                <Link to="/fees">
+                <p className={`${activeTab === "Fees Details" ? " bg-[#47A5E4] text-white border-transparent cursor-pointer rounded-[6px] text-[16px] font-Poppins  px-14 py-2 not-italic font-bold leading-[normal] tracking-[0.32px] capitalize " : "border-transparent  text-black text-[16px] font-Poppins not-italic font-normal leading-[normal] tracking-[0.32px] capitalize"}`} onClick={() => setActiveTab("Fees Details")} >Fees Details</p>
+                </Link>
 
         {/* <li onClick={handleClick} className={" cursor-pointer rounded-[6px] text-[16px] font-Poppins  px-10 py-2 not-italic font-bold leading-[normal] tracking-[0.32px] capitalize " + (activeTab === id ? "bg-[#47A5E4] text-white border-transparent " : "border-transparent  text-black text-[16px] font-Poppins not-italic font-normal leading-[normal] tracking-[0.32px] capitalize")}>Home</li>
         <li onClick={handleClick} className={" cursor-pointer rounded-[6px] text-[16px] font-Poppins px-10 py-2 not-italic font-bold leading-[normal] tracking-[0.32px] capitalize " + (activeTab === id ? "bg-[#47A5E4] text-white border-transparent " : "border-transparent  text-black text-[16px] font-Poppins not-italic font-normal leading-[normal] tracking-[0.32px] capitalize")}>Attendance</li>

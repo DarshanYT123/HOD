@@ -96,7 +96,7 @@ const HodUniversity = () => {
               </div>
 
               <div className="absolute bottom-11 left-[8rem]">
-                <h1 className="text-[#16376E] font-Raleway text-[20px] not-italic font-bold leading-normal tracking-[1.1px]">
+                <h1 className="text-[#16376E] font-Raleway text-[16px] not-italic font-bold leading-normal tracking-[1.1px]">
                   Mentoring Forms
                 </h1>
               </div>
@@ -172,7 +172,7 @@ const HodUniversity = () => {
               </div>
 
               <div className="absolute bottom-11 left-[29rem]">
-                <h1 className="text-[#16376E] font-Raleway text-[20px] not-italic font-bold leading-normal tracking-[1.1px]">
+                <h1 className="text-[#16376E] font-Raleway text-[16px] not-italic font-bold leading-normal tracking-[1.1px]">
                   Attendance
                 </h1>
               </div>
@@ -259,7 +259,7 @@ const HodUniversity = () => {
               </div>
 
               <div className="absolute bottom-11 left-[50rem]">
-                <h1 className="text-[#16376E] font-Raleway text-[20px] not-italic font-bold leading-normal tracking-[1.1px]">
+                <h1 className="text-[#16376E] font-Raleway text-[16px] not-italic font-bold leading-normal tracking-[1.1px]">
                   Fees
                 </h1>
               </div>
@@ -357,7 +357,7 @@ const HodUniversity = () => {
               </div>
 
               <div className="absolute bottom-[4rem] left-[8rem]">
-                <h1 className="text-[#16376E] font-Raleway text-[20px] not-italic font-bold leading-normal tracking-[1.1px]">
+                <h1 className="text-[#16376E] font-Raleway text-[16px] not-italic font-bold leading-normal tracking-[1.1px]">
                   Results
                 </h1>
               </div>
@@ -433,8 +433,8 @@ const HodUniversity = () => {
               </div>
 
               <div className="absolute bottom-[4rem] left-[29rem]">
-                <h1 className="text-[#16376E] font-Raleway text-[20px] not-italic font-bold leading-normal tracking-[1.1px]">
-                  Attendance
+                <h1 className="text-[#16376E] font-Raleway text-[16px] not-italic font-bold leading-normal tracking-[1.1px]">
+                Send Notice/circular
                 </h1>
               </div>
             </div>

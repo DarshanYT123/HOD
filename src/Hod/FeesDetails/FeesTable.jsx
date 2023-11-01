@@ -189,6 +189,7 @@ const FeesTable = ({handleNextStep}) => {
         status:"Paid",
         Method:"Cash",
         Display:"View", 
+        path:"/dashboard"
     },
     {
         Eno:"21BECE30000",
@@ -196,6 +197,7 @@ const FeesTable = ({handleNextStep}) => {
         status:"Paid",
         Method:"Cash",
         Display:"View", 
+        path:"/dashboard"
     },
     {
         Eno:"21BECE30000",
@@ -203,6 +205,7 @@ const FeesTable = ({handleNextStep}) => {
         status:"Paid",
         Method:"Cash",
         Display:"View", 
+        path:"/dashboard"
     },
     {
         Eno:"21BECE30000",
@@ -210,6 +213,7 @@ const FeesTable = ({handleNextStep}) => {
         status:"Paid",
         Method:"Cash",
         Display:"View", 
+        path:"/dashboard"
     },
     {
         Eno:"21BECE30000",
@@ -217,6 +221,7 @@ const FeesTable = ({handleNextStep}) => {
         status:"Paid",
         Method:"Cash",
         Display:"View", 
+        path:"/dashboard"
     },
     {
         Eno:"21BECE30000",
@@ -224,6 +229,7 @@ const FeesTable = ({handleNextStep}) => {
         status:"Paid",
         Method:"Cash",
         Display:"View", 
+        path:"/dashboard"
     },
 ]
 

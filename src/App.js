@@ -12,20 +12,21 @@ import HodUniversity from "./Hod/University/HodUniversity";
 import HodTable from './Hod/HodForm/HodTable';
 import SecondFeesTable from "./Hod/FeesDetails/SecondFeesTable";
 import ResultTable from "./Hod/Results/ResultTable";
+import HodDashboard from "./Hod/HodForm/HodDashboard";
+import HodAttendanceTable from "./Hod/Attendance/HodAttendanceTable";
 
 function App() {
   return (
     <div className="App bg-[#F6F3F3] ">
-      <div>
       <Navbar />
-      <Sidebar/>
-      <div className="relative top-4 flex justify-end ">
+      <div>
+      <div className="pt-2 top-4 flex justify-end ">
         <h2 className="text-[color:var(--black,#101010)] text-[14px] font-Poppins not-italic font-semibold leading-[normal] tracking-[0.28px] capitalize">Last Login</h2>
         <h2 className="text-[color:var(--black,#101010)] text-[14px] font-Poppins not-italic font-normal leading-[normal] tracking-[0.28px] capitalize px-3">2 :00 pM , Sunday 15 Oct 2023</h2>
       </div>
+      <Sidebar/>
       {/* <Progressbar/> */}
       <div className=" ">
-        <Router>
       <Routes>
 
       {/* <Route path="/hod" element={<Hod />} /> */}
@@ -35,11 +36,12 @@ function App() {
       <Route path="/fees" element={<SecondFeesTable />} />
       <Route path="/cards" element={<HodUniversity />} />
       <Route path="/hodform" element={<HodTable />} />
+      <Route path="/dashboard" element={<HodDashboard />} />
+      <Route path="/attendancetable" element={<HodAttendanceTable />} />
 
 
       {/* <Page /> */}
       </Routes>
-      </Router>
       </div>
       </div>
       

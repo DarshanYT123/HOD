@@ -189,6 +189,7 @@ const HodTable = ({handleNextStep}) => {
         Mform:"Done",
         Fees:"Paid",
         Display:"View", 
+        path:"/dashboard"
     },
     {
       Eno:"21BECE30000",
@@ -196,6 +197,7 @@ const HodTable = ({handleNextStep}) => {
       Mform:"Done",
       Fees:"Paid",
       Display:"View", 
+      path:"/dashboard"
   },
   {
     Eno:"21BECE30000",
@@ -203,6 +205,7 @@ const HodTable = ({handleNextStep}) => {
     Mform:"Done",
     Fees:"Paid",
     Display:"View", 
+    path:"/dashboard"
 },
 {
   Eno:"21BECE30000",
@@ -210,6 +213,7 @@ const HodTable = ({handleNextStep}) => {
   Mform:"Done",
   Fees:"Paid",
   Display:"View", 
+  path:"/dashboard"
 },
 {
   Eno:"21BECE30000",
@@ -217,6 +221,7 @@ const HodTable = ({handleNextStep}) => {
   Mform:"Done",
   Fees:"Paid",
   Display:"View", 
+  path:"/dashboard"
 },
 ]
 
@@ -327,6 +332,7 @@ className="text-sm  h-[72px] rounded-lg py-3 px-3 transition-all duration-300  "
                   </td>
                   <td className="px-[1rem] whitespace-nowrap border-[2px] border-[#47A5E4]">
                     <div className="">
+                      <a href={id.path}>
                       <div className="  text-black text-[16px] font-inter not-italic font-bold leading-[normal] tracking-[0.32px] capitalize">    
                       {/* {localStorage.getItem('Full Name')
                         ? localStorage.getItem('Full Name')
@@ -335,6 +341,7 @@ className="text-sm  h-[72px] rounded-lg py-3 px-3 transition-all duration-300  "
                       {id.Fname}
                       {/* {data[id1].fullname} */}
                       </div>
+                      </a>
                     </div>
                   </td>
                   <td className="px-[1rem] whitespace-nowrap border-[2px] border-[#47A5E4]">
@@ -364,13 +371,13 @@ className="text-sm  h-[72px] rounded-lg py-3 px-3 transition-all duration-300  "
                   <td className="px-[2rem] whitespace-nowrap border-[2px] border-[#47A5E4]">
                     <div className="">
                       <div className=" text-white shadow-[0px_4px_8px_0px_rgba(184,182,182,0.25)] text-[16px] font-inter not-italic font-bold leading-[normal] bg-[#159BD6] py-2 px-4 rounded-[5px] tracking-[0.32px] capitalize">
-                        <Link to={`/mentordashboard/${id}`} >
+                       <a href={id.path}>
                       {/* {localStorage.getItem('Display')
                         ? localStorage.getItem('Reference By')
                         : "View"
                         } */}
                       {id.Display}
-                      </Link>
+                      </a>
                       </div>
                     </div>
                   </td>

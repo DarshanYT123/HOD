@@ -5,7 +5,7 @@ import { toast } from 'react-toastify';
 import { BiRightArrowAlt } from 'react-icons/bi'
 import { Link } from "react-router-dom"
 
-const HodResultTable = ({handleNextStep}) => {
+const HodAttendanceTable = ({handleNextStep}) => {
 
 
     const [activeTab, setActiveTab] = useState("tab1");
@@ -223,7 +223,7 @@ const HodResultTable = ({handleNextStep}) => {
 
   return (
     <>
-    <div className="absolute top-0 right-0    ">
+    <div className="absolute top-[4.5rem] right-0    ">
       <div className="flex flex-row justify-between ">
       <div className="flex flex-row py-3 gap-x-1 justify-start items-center">
         <h2 className="text-[color:var(--black,#101010)] text-[12px] font-inter not-italic font-bold leading-[normal] tracking-[0.66px]">Mentoring Form </h2>
@@ -371,4 +371,4 @@ className="table-auto text-sm  h-[72px] rounded-lg py-3 px-3 transition-all dura
   );
 };
 
-export default HodResultTable;
+export default HodAttendanceTable;
