@@ -3,7 +3,7 @@ import React, { useState } from "react";
 const HodUniversity = () => {
   return (
     <>
-      <div className="absolute top-10 right-0  px-10 rounded-[6px]  py-5 overflow-y-auto h-[42rem]  bg-[#F9FAFA] ">
+      <div className="absolute top-[5.5rem] right-0  px-10 rounded-[6px]  py-5 overflow-y-auto h-[42rem]  bg-[#F9FAFA] ">
         <div className="py-5">
           <h1 className="font-Raleway text-[#47A5E4] text-[20px] font-bold leading-normal tracking-[1.1px]">
             <span className="text-[#16376E] font-extrabold font-font-Raleway leading-normal tracking-[1.1px]  ">
@@ -17,7 +17,7 @@ const HodUniversity = () => {
         <div className="relative">
           <div className="flex flex-row gap-4 items-center justify-center">
             {/* first  */}
-            <a href="#">
+            <a href="/hodform">
             <div className="w-[320px] h-[120px] border bg-[#FFF] rounded-[12px] shadow-[rgba(153,153,153,0.25)_2px_4px_28px_0px]">
               <div className=" absolute bottom-3 left-4 ">
                 <div className="border rounded-full w-[95px] h-[95px] bg-gradient-to-r from-[#47A5E4] to-[#16376E]"></div>

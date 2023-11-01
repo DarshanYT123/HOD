@@ -1,11 +1,10 @@
-import React, { useState,useEffect } from "react";
+import React, { useState } from "react";
+import HodDragDropImage from "./HodDragDropImage";
+import HodFatherDragDrop from "./HodFatherDragDrop";
+import HodMotherDragDrop from "./HodMotherDragDrop";
+import { BiRightArrowAlt } from 'react-icons/bi'
 
-const MentoringForm = ({handleNextStep}) => {
-    useEffect(() => {
-        document.title = "LDRP | Mentoring Form";
-        document.getElementById("header_title").innerHTML = "Mentoring Form";
-    
-      });
+const HodDashboard = ({handleNextStep}) => {
   const [values, setValues] = React.useState({
     studentname: "",
     enrollmentno: "",
@@ -131,7 +130,23 @@ const MentoringForm = ({handleNextStep}) => {
 
   return (
     <>
-      <div className=" right-0 pr-10  py-5 max-h-[700px]  overflow-y-auto   ">
+    <div className="absolute top-0 right-0    ">
+      <div className="flex flex-row justify-between ">
+      <div className="flex flex-row py-3 gap-x-1 justify-start items-center">
+        <h2 className="text-[color:var(--black,#101010)] text-[12px] font-inter not-italic font-bold leading-[normal] tracking-[0.66px]">Mentoring Form </h2>
+        <span><BiRightArrowAlt/></span>
+        <h2  className="text-[color:var(--black,#101010)] text-[12px] font-inter not-italic font-bold leading-[normal] tracking-[0.66px]">21BECE30000 </h2>
+      </div>
+     {/* <div className="py-2 flex justify-end ">
+      <h2 className="text-[color:var(--black,#101010)] text-[14px] font-Poppins not-italic font-semibold leading-[normal] tracking-[0.28px] capitalize">Last Login</h2>
+      <h2 className="text-[color:var(--black,#101010)] text-[14px] font-Poppins not-italic font-normal leading-[normal] tracking-[0.28px] capitalize px-3">2 :00 pM , Sunday 15 Oct 2023</h2>
+    </div> */}
+    </div>
+      <div className=" max-h-[700px] py-5 px-20 overflow-y-auto bg-white  ">
+      <div className="flex flex-row gap-x-[43rem]">
+        <h2 className="text-[color:var(--01,#16376E)] text-[20px] font-Poppins not-italic font-bold leading-[normal] tracking-[1.1px]">21BECE30000</h2>
+        <h2 className="text-[color:var(--01,#16376E)] text-[18px] font-Poppins not-italic font-bold leading-[normal] tracking-[0.99px]">Raj Mehta</h2>
+      </div>
         <div className="flex justify-center  items-center">
           <h2 className="text-[color:var(--02,#47A5E4)] text-[20px] font-Raleway not-italic font-bold leading-[normal] tracking-[1.1px]">
             Basic Information
@@ -207,9 +222,9 @@ const MentoringForm = ({handleNextStep}) => {
           </div>
           {/* PHOTOS ADD */}
           <div className="flex gap-x-44 px-10 flex-row  items-center py-4">
-            {/* <DragDropImage />
-            <FatherDragDrop />
-            <MotherDragDrop /> */}
+            <HodDragDropImage />
+            <HodFatherDragDrop />
+            <HodMotherDragDrop />
            
           </div>
           {/* MENTOR ADD */}
@@ -429,8 +444,9 @@ const MentoringForm = ({handleNextStep}) => {
           </div>{" "}
         </form>
       </div>
+      </div>
     </>
   );
 };
 
-export default MentoringForm;
+export default HodDashboard;

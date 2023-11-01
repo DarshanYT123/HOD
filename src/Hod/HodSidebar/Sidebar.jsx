@@ -1,24 +1,8 @@
 import React, { useState } from "react";
 
-import TabNavItem from "../TabNavItem/TabNavItem";
-import TabContent from "../TabContent/TabContent";
-import HodUniversity from "../University/HodUniversity";
-import Notification from "../Notification/Notification";
-import MentorFeesDetails from "../FeesDetails/MentorFeesDetails"
-import MentorResultSection from "../Results/MentorResultSection"
-import ResultTable from "../Results/ResultTable";
-import FeesTable from "../FeesDetails/FeesTable";
-import SecondFeesTable from "../FeesDetails/SecondFeesTable";
-import AttendanceHod from "../../Hod/Attendance/AttendanceHod";
-import Home from "../../Hod/HomeSidebar/Home";
-import HodTable from "../HodForm/HodTable";
-import HodDashboard from "../HodForm/HodDashboard";
-import HodResultTable from "../Results/HodResultTable";
+const Sidebar = () => {
 
-const HodSidebar = () => {
-
-  const [activeTab, setActiveTab] = useState("tab1");
-
+  const [activeTab, setActiveTab] = useState("");
   return (
     <div className="">
      <div className="px-2">
@@ -39,44 +23,25 @@ Department</h2>
        </div>
        </a>
              </div>
-             <ul className=" flex flex-col justify-center items-center my-4 space-y-5">
-                      <TabNavItem
-          title="Home"
-          id="tab1"
-          activeTab={activeTab}
-          setActiveTab={setActiveTab}
-        />
-        <TabNavItem
-          title="Attendance"
-          id="tab2"
-          activeTab={activeTab}
-          setActiveTab={setActiveTab}
-        />
-        <TabNavItem
-          title="Results"
-          id="tab3"
-          activeTab={activeTab}
-          setActiveTab={setActiveTab}
-        />
-        <TabNavItem
-          title="Fees details"
-          id="tab4"
-          activeTab={activeTab}
-          setActiveTab={setActiveTab}
-        />
-        <TabNavItem
-          title="University"
-          id="tab5"
-          activeTab={activeTab}
-          setActiveTab={setActiveTab}
-        />
-        <TabNavItem
-          title="Notification"
-          id="tab6"
-          activeTab={activeTab}
-          setActiveTab={setActiveTab}
-        />
-      </ul>
+             <div className="sidebar flex flex-col justify-center items-center my-4 space-y-5">
+                <a href="/home">
+                <p className={`${activeTab === "Home" ? "px-10 py-2 bg-[#47A5E4] text-white border-transparent" : ""}`} onClick={() => setActiveTab("Home")} >Home</p>
+                </a>
+                <a href="/attendance">
+                <p className={`${activeTab === "Attendance" ? "active" : ""}`} onClick={() => setActiveTab("Attendance")} >Attendance</p>
+                </a>
+                <a href="/result">
+                <p className={`${activeTab === "Results" ? "active" : ""}`} onClick={() => setActiveTab("Results")} >Results</p>
+                </a>
+                <a href="/fees" >
+                <p className={`${activeTab === "Fees Details" ? "active" : ""}`} onClick={() => setActiveTab("Fees Details")} >Fees Details</p>
+                </a>
+
+        {/* <li onClick={handleClick} className={" cursor-pointer rounded-[6px] text-[16px] font-Poppins  px-10 py-2 not-italic font-bold leading-[normal] tracking-[0.32px] capitalize " + (activeTab === id ? "bg-[#47A5E4] text-white border-transparent " : "border-transparent  text-black text-[16px] font-Poppins not-italic font-normal leading-[normal] tracking-[0.32px] capitalize")}>Home</li>
+        <li onClick={handleClick} className={" cursor-pointer rounded-[6px] text-[16px] font-Poppins px-10 py-2 not-italic font-bold leading-[normal] tracking-[0.32px] capitalize " + (activeTab === id ? "bg-[#47A5E4] text-white border-transparent " : "border-transparent  text-black text-[16px] font-Poppins not-italic font-normal leading-[normal] tracking-[0.32px] capitalize")}>Attendance</li>
+        <li onClick={handleClick} className={" cursor-pointer rounded-[6px] text-[16px] font-Poppins px-10 py-2 not-italic font-bold leading-[normal] tracking-[0.32px] capitalize " + (activeTab === id ? "bg-[#47A5E4] text-white border-transparent " : "border-transparent  text-black text-[16px] font-Poppins not-italic font-normal leading-[normal] tracking-[0.32px] capitalize")}>Results</li>
+        <li onClick={handleClick} className={" cursor-pointer rounded-[6px] text-[16px] font-Poppins px-10 py-2 not-italic font-bold leading-[normal] tracking-[0.32px] capitalize " + (activeTab === id ? "bg-[#47A5E4] text-white border-transparent " : "border-transparent  text-black text-[16px] font-Poppins not-italic font-normal leading-[normal] tracking-[0.32px] capitalize")}>Fees Details</li> */}
+      </div>
              <div>
             
       </div>
@@ -85,35 +50,12 @@ Department</h2>
 
            
       <div className="px-10">
-        <TabContent id="tab1" activeTab={activeTab}>
-          <Home />
-          {/* <HodUniversity /> */}
-          {/* <HodTable/> */}
-          {/* <HodDashboard/> */}
-        </TabContent>
-        <TabContent id="tab2" activeTab={activeTab}>
-          <AttendanceHod />
-          {/* <HodDashboard/> */}
-        </TabContent>
-        <TabContent id="tab3" activeTab={activeTab}>
-              {/* <ResultTable/> */}
-              <HodResultTable/>
-        </TabContent>
-        <TabContent id="tab4" activeTab={activeTab}>
-          <SecondFeesTable/>
-          {/* <HodDashboard/> */}
-          </TabContent>
-        <TabContent id="tab5" activeTab={activeTab}>
-        </TabContent>
-        <TabContent id="tab6" activeTab={activeTab}>
-        <Notification />
-        </TabContent>
       </div>
     </div>
   );
 };
 
-export default HodSidebar;
+export default Sidebar;
 // import React from "react";
 // import { NavLink } from 'react-router-dom'
 
